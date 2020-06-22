@@ -1,0 +1,10 @@
+name: MinecraftPlugin
+version: "1.0"
+main: cz.arthedain.minecraftplugin.MinecraftPlugin
+commands:
+  home:
+    description: "Overly simple /home command"
+    usage: /home
+  sethome:
+    description: "Overly simple /home set command"
+    usage: /sethome
