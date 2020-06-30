@@ -20,11 +20,11 @@ public class CommandHome implements CommandExecutor {
         if (sender instanceof Player) {
             Player player = (Player) sender;
             FileConfiguration homesConfig = main.getHomesConfig();
-            if (!homesConfig.contains(player.getName())) {
+            if (!homesConfig.contains(player.getUniqueId().toString())) {
                 player.sendMessage("You don't have a home!");
                 return false;
             } else {
-                Location home = (Location) homesConfig.get(player.getName());
+                Location home = (Location) homesConfig.get(player.getUniqueId().toString());
                 player.teleport(home);
             }
         }

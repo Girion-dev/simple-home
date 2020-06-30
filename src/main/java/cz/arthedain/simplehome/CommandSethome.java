@@ -22,7 +22,7 @@ public class CommandSethome implements CommandExecutor {
             Player player = (Player) sender;
             Location location = player.getPlayer().getLocation();
             FileConfiguration homesConfig = main.getHomesConfig();
-            homesConfig.set(player.getName(), location);
+            homesConfig.set(player.getUniqueId().toString(), location);
             try {
                 homesConfig.save("plugins/SimpleHome/homes.yml");
             } catch (IOException e) {
