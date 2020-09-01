@@ -9,6 +9,7 @@ import org.bukkit.entity.Player;
 
 
 public class CommandHome implements CommandExecutor {
+    
     private SimpleHome main;
 
     public CommandHome(SimpleHome main) {
